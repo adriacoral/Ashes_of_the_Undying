@@ -9,6 +9,7 @@ public class OptionsMenu : MonoBehaviour
     [SerializeField] private GameObject audioPanel;
     [SerializeField] private GameObject keyboardPanel;
     [SerializeField] private GameObject controllerPanel;
+    [SerializeField] private GameObject creditsPanel;
 
     [Header("Audio Sliders")]
     [SerializeField] private Slider masterSlider;
@@ -78,5 +79,17 @@ public class OptionsMenu : MonoBehaviour
         if (AudioManager.instance != null)
             AudioManager.instance.SetMusicVolume(value);
         PlayerPrefs.SetFloat("MusicVolume", value);
+    }
+    public void OpenCredits()
+    {
+        audioPanel.SetActive(false);
+        keyboardPanel.SetActive(false);
+        controllerPanel.SetActive(false);
+        creditsPanel.SetActive(true);
+    }
+
+    public void CloseCredits()
+    {
+        creditsPanel.SetActive(false);
     }
 }

@@ -53759,7 +53759,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5715205378345609985, guid: 86afb6b726ecb1a418c10d934826d599, type: 3}
       propertyPath: maxHealth
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6377771734751906652, guid: 86afb6b726ecb1a418c10d934826d599, type: 3}
       propertyPath: m_Size.y
