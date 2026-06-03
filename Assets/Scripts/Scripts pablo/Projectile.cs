@@ -39,7 +39,7 @@ public class Projectile : MonoBehaviour
         {
             EnemyHealth enemy = other.GetComponent<EnemyHealth>();
             if (enemy != null)
-                enemy.TakeDamage(6, _direction);
+                enemy.TakeDamage(3, _direction);
             AudioManager.instance.PlaySFX(AudioManager.instance.projectileImpactSFX);
             Destroy(gameObject);
         }

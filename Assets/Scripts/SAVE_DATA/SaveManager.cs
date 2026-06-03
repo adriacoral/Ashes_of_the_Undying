@@ -33,11 +33,12 @@ public class SaveManager : MonoBehaviour
 
     public void SaveGame(int slot)
     {
-        
         HollowKnightMovement player = FindFirstObjectByType<HollowKnightMovement>();
         if (player == null) return;
-        
+
+        SaveData existingData = LoadGame(slot);
         SaveData data = new SaveData();
+
         data.sceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
         data.respawnX = player.respawnPoint != null ? player.respawnPoint.position.x : player.transform.position.x;
         data.respawnY = player.respawnPoint != null ? player.respawnPoint.position.y : player.transform.position.y;
@@ -48,32 +49,26 @@ public class SaveManager : MonoBehaviour
         data.hasProjectile = player.hasProjectile;
         data.hasDoubleJump = player.hasDoubleJump;
         data.hasDash = player.hasDash;
-        data.dasherDefeated = DasherPersistence.instance != null ?
-    DasherPersistence.instance.IsDefeated :
-    (LoadGame(slot)?.dasherDefeated ?? false);
-        SaveData existingData = LoadGame(slot);
+
         data.playerName = (existingData != null && !string.IsNullOrEmpty(existingData.playerName))
             ? existingData.playerName
             : _pendingName;
-        if (existingData != null && existingData.destroyedWalls != null)
-        {
-            data.destroyedWalls = existingData.destroyedWalls;
-            
-        }
-        // Mantener lista de paredes destruidas
+
+        // Preservar datos anteriores
         if (existingData != null && existingData.destroyedWalls != null)
             data.destroyedWalls = existingData.destroyedWalls;
 
-        // Mantener dasherDefeated si no hay DasherPersistence en escena
-        data.dasherDefeated = DasherPersistence.instance != null ?
-            DasherPersistence.instance.IsDefeated :
-            (existingData?.dasherDefeated ?? false);
+        data.dasherDefeated = DasherPersistence.instance != null
+            ? DasherPersistence.instance.IsDefeated
+            : (existingData?.dasherDefeated ?? false);
+
+        data.bossDefeated = BossPersistence.instance != null
+            ? BossPersistence.instance.IsDefeated
+            : (existingData?.bossDefeated ?? false);
+
+        // Guardar al final, con todos los campos ya asignados
         string json = JsonUtility.ToJson(data, true);
         File.WriteAllText(GetSavePath(slot), json);
-       
-        data.bossDefeated = BossPersistence.instance != null ?
-         BossPersistence.instance.IsDefeated :
-         (existingData?.bossDefeated ?? false);
     }
 
     public SaveData LoadGame(int slot)

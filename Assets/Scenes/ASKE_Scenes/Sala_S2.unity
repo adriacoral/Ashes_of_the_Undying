@@ -4180,6 +4180,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4524876369578015486, guid: ac2915217c2a8c446ad6b429884db2c5, type: 3}
     - target: {fileID: 1460524175465056236, guid: f9f819aefdedd1a48af8e62fda3148b0, type: 3}
+      propertyPath: maxHitsPerLife
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1460524175465056236, guid: f9f819aefdedd1a48af8e62fda3148b0, type: 3}
       propertyPath: _footstepLeaves
       value: 
       objectReference: {fileID: 0}

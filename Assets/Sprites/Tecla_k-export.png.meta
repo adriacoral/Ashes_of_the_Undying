@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 20f03f83e114646478dd1b29d23f9b53
+guid: e59cf0aefca836a4b9d0e94f1ea548bc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8925383164121591309
-    second: Moneda 1-export_0
-  - first:
-      213: 3252389310191178505
-    second: Moneda 1-export_1
+      213: 4681270385717929981
+    second: Tecla_k-export_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Moneda 1-export_0
+      name: Tecla_k-export_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 15
-        height: 16
+        x: 4
+        y: 2
+        width: 27
+        height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d0e28b5f2b45ddb70800000000000000
-      internalID: 8925383164121591309
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Moneda 1-export_1
-      rect:
-        serializedVersion: 2
-        x: 18
-        y: 0
-        width: 10
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 903193188dec22d20800000000000000
-      internalID: 3252389310191178505
+      spriteID: df7e5460d9637f040800000000000000
+      internalID: 4681270385717929981
       vertices: []
       indices: 
       edges: []
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Moneda 1-export_0: 8925383164121591309
-      Moneda 1-export_1: 3252389310191178505
+      Tecla_k-export_0: 4681270385717929981
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
