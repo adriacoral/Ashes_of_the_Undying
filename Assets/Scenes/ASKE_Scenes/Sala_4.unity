@@ -1148,7 +1148,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3858788620452891031, guid: ba752e3e67d10944f8cd9dc2871b9204, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.96
+      value: 8.42
       objectReference: {fileID: 0}
     - target: {fileID: 3858788620452891031, guid: ba752e3e67d10944f8cd9dc2871b9204, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1289,7 +1289,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3858788620452891031, guid: ba752e3e67d10944f8cd9dc2871b9204, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.96
+      value: 8.25
       objectReference: {fileID: 0}
     - target: {fileID: 3858788620452891031, guid: ba752e3e67d10944f8cd9dc2871b9204, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5158,7 +5158,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6557783534291254867, guid: b0fd6a4cc068dab4eb4e0de2bc1fffbd, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8385871778086831725, guid: b0fd6a4cc068dab4eb4e0de2bc1fffbd, type: 3}
       propertyPath: m_Pivot.x
@@ -5351,6 +5351,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1235644713494274387, guid: ba752e3e67d10944f8cd9dc2871b9204, type: 3}
+      propertyPath: hintIcon
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1235644713494274387, guid: ba752e3e67d10944f8cd9dc2871b9204, type: 3}
       propertyPath: keyToPress
       value: 32
@@ -44912,7 +44916,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1847240292550273695, guid: d293378de931a0f43bbed7ea2df52d72, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1887794952079557593, guid: d293378de931a0f43bbed7ea2df52d72, type: 3}
       propertyPath: m_SizeDelta.x

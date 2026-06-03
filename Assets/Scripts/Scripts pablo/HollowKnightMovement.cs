@@ -227,9 +227,9 @@ public class HollowKnightMovement : MonoBehaviour
             return;
         }
         _animator.SetBool("isGrounded", _isGrounded);
-        _moveInput.x = Input.GetAxisRaw("Horizontal");
-        _moveInput.y = Input.GetAxisRaw("Vertical");
-        float input = Input.GetAxisRaw("Horizontal");
+        _moveInput.x = (Input.GetKey(KeyCode.A) ? -1f : 0f) + (Input.GetKey(KeyCode.D) ? 1f : 0f);
+        _moveInput.y = (Input.GetKey(KeyCode.S) ? -1f : 0f) + (Input.GetKey(KeyCode.W) ? 1f : 0f);
+        float input = _moveInput.x;
         if (input != 0)
         {
             _animator.SetBool("isRunning", true);
@@ -255,30 +255,25 @@ public class HollowKnightMovement : MonoBehaviour
         if (_moveInput.x != 0)
             CheckDirectionToFace(_moveInput.x > 0);
 
-        // Jump Input (Space, C, J, W, Up Arrow)
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.C) || 
-            Input.GetKeyDown(KeyCode.J) || Input.GetKeyDown(KeyCode.W) || 
-            Input.GetKeyDown(KeyCode.UpArrow))
+        // Jump Input (Space, C, J, W, )
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             OnJumpInput();
         }
 
-        if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp(KeyCode.C) || 
-            Input.GetKeyUp(KeyCode.J) || Input.GetKeyUp(KeyCode.W) || 
-            Input.GetKeyUp(KeyCode.UpArrow))
+        if (Input.GetKeyUp(KeyCode.Space))
         {
             OnJumpUpInput();
         }
 
         // Dash Input (LeftShift, X, K)
-        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.X) || 
-            Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             OnDashInput();
         }
 
         // Attack Input (Z, Mouse0) - Preparado para futuro
-        if (Input.GetKeyDown(KeyCode.Z) || Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.K)) 
         {
             OnAttackInput();
         }
