@@ -3163,7 +3163,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5287619257252885857, guid: d57d40c25edef564aad61b11e91ff8e1, type: 3}
   m_PrefabInstance: {fileID: 580142270}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1979988294}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2a91f3417988eaf448d80040a11a4811, type: 3}
@@ -5862,7 +5862,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4120066636833044925, guid: 9bbb60e9adcab34429c142c20a409454, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.1618042
+      value: 0.16186523
       objectReference: {fileID: 0}
     - target: {fileID: 4120066636833044925, guid: 9bbb60e9adcab34429c142c20a409454, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -6477,7 +6477,11 @@ PrefabInstance:
     - target: {fileID: 9060965573236518788, guid: 0d424c094fdba964b9d234d93fb0fe9d, type: 3}
       propertyPath: savePanel
       value: 
-      objectReference: {fileID: 1058825390566134645, guid: f857d5bce81e40748ab002b207c4391b, type: 3}
+      objectReference: {fileID: 1092076677}
+    - target: {fileID: 9060965573236518788, guid: 0d424c094fdba964b9d234d93fb0fe9d, type: 3}
+      propertyPath: travelPanel
+      value: 
+      objectReference: {fileID: 1979988294}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -40685,11 +40689,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8999148305890123800, guid: f9f819aefdedd1a48af8e62fda3148b0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 120.32
+      value: -4.11
       objectReference: {fileID: 0}
     - target: {fileID: 8999148305890123800, guid: f9f819aefdedd1a48af8e62fda3148b0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.53
+      value: -1.69
       objectReference: {fileID: 0}
     - target: {fileID: 8999148305890123800, guid: f9f819aefdedd1a48af8e62fda3148b0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -41238,7 +41242,7 @@ Transform:
   m_GameObject: {fileID: 1674818143}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 121.170166, y: -2.3899975, z: -10}
+  m_LocalPosition: {x: -0.745121, y: -0.550002, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -41414,11 +41418,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 902710486752695156, guid: 9fec007e485d7f149949c302fcdf3d7a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 126.15038
+      value: 1.7203832
       objectReference: {fileID: 0}
     - target: {fileID: 902710486752695156, guid: 9fec007e485d7f149949c302fcdf3d7a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.76908493
+      value: 1.0709149
       objectReference: {fileID: 0}
     - target: {fileID: 2399588033602976198, guid: 9fec007e485d7f149949c302fcdf3d7a, type: 3}
       propertyPath: m_Name
@@ -41893,6 +41897,10 @@ PrefabInstance:
       propertyPath: savePanel
       value: 
       objectReference: {fileID: 1092076677}
+    - target: {fileID: 9060965573236518788, guid: 0d424c094fdba964b9d234d93fb0fe9d, type: 3}
+      propertyPath: travelPanel
+      value: 
+      objectReference: {fileID: 1979988294}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -43109,6 +43117,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1979988294 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7526612673248728861, guid: d57d40c25edef564aad61b11e91ff8e1, type: 3}
+  m_PrefabInstance: {fileID: 580142270}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1990196309 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 127318559438022302, guid: 9bbb60e9adcab34429c142c20a409454, type: 3}
